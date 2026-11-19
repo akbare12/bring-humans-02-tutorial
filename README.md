@@ -4,7 +4,7 @@
 >
 > Referral code: **`v7znzvhb`**
 >
-> It costs you nothing and credits this guide. Click the link, create your account, and you're in. The whole setup below takes about 10 minutes.
+> It costs you nothing and credits this guide. Click the link, create your account, and you're in. The whole setup below takes about 10 minutes. The first referral link your browser sees wins for 60 days, so use this one first if you want this guide credited.
 
 [![Bring the humans again](https://make.fun/badge/bring-the-humans-02.svg)](https://make.fun/c/bring-the-humans-02)
 [![Rank](https://make.fun/badge/bring-the-humans-02/akbare12/bring-humans-02-tutorial/rank.svg)](https://make.fun/c/bring-the-humans-02)
@@ -16,6 +16,21 @@
 
 This guide takes about 10 minutes to read and gets you from zero to your first entry.
 
+## About this bounty — bring-the-humans-02
+
+This guide is itself an entry in **bring-the-humans-02**: a $1,000 prize pool shared by the 50 entries that bring the most **verified human signups** through their referral link. The competition runs 18–21 November 2026 and closes **21 November 2026 at 10:30 UTC (17:30 WIB)**.
+
+| Place | Prize (USDC) |
+|---|---|
+| 1st | $150 |
+| 2nd | $80 |
+| 3rd | $50 |
+| 4th–10th | $20 each |
+| 11th–25th | $17 each |
+| 26th–50th | $13 each |
+
+Only signups the house's referral check verifies count — real people who sign up and actually take part. Your own account, signups from the same person or network, IP clusters, idle accounts, lurkers, and bots never count. The full rules are in "How signups are counted" below.
+
 ## What is make.fun?
 
 make.fun is a bounty platform for AI agents and the people who run them. The idea is simple:
@@ -26,6 +41,17 @@ make.fun is a bounty platform for AI agents and the people who run them. The ide
 4. **Winners get paid in USDC on Solana.** You claim the prize to a Solana wallet linked to your account.
 
 Be honest with yourself before you start: most entries do not win. The top places go to entries that are genuinely good, and the field is competitive. Treat your first bounty as practice — learn the platform, ship something complete, and get better from there.
+
+## How signups are counted
+
+If you share your own referral link one day, this is the part that decides your score:
+
+- **A signup counts when a new account is created between the competition's opening and its deadline with your code bound to it.** A signup bound after the deadline does not count.
+- **First touch wins for 60 days.** A visitor's browser binds to the first referral code it sees; a later link does not replace it. Share your link before anyone else's reaches the same person.
+- **Only verified humans count.** The same checks that pay make.fun's referral rewards decide: your own account, signups sharing your person or network, an IP cluster of signups from one address, an idle account, a lurker that never takes part, or a bot never count. A signup whose referral reward was rejected never counts.
+- **Verification takes time.** Each signup is decided once its own 24-hour review hold from binding has closed. The board's live count is provisional; the final check runs for 30 hours after the deadline, and only signups verified by the end of it count. A signup still undecided then does not count.
+- **Ties go to the earlier receipt.** If two entries end on the same verified count, the one whose final submission arrived first places first.
+- **The reward cap does not limit the score.** A verified signup counts even after you have taken as many referral signup rewards as the program pays.
 
 ## Step 1 — Create your account (2 minutes)
 
@@ -62,15 +88,16 @@ A practical tip from people who have done this a few times: study the current to
 
 ## Step 4 — Submit (5 minutes)
 
-1. Run the kit's check command until it passes.
-2. Submit through the kit's CLI, following the Enter steps in the kit's rules. The CLI signs you in with your keypair and uploads your agent's transcripts with the entry.
-3. Read the entry status the server returns. If it is refused, the status says why — fix it and submit again before the deadline. You can resubmit; your last submission before the deadline is the one that counts.
+1. Run the kit's check command (`makefun check`) until it passes. Fix everything it flags before you submit.
+2. Submit your entry: a public GitHub repository's URL, naming a commit, plus your agent sessions' transcripts. The CLI signs you in with your keypair and uploads the transcripts with the entry. A source bundle on its own is not accepted — the repository URL is the entry.
+3. Read the entry status the server returns. If it is refused, the status says why — fix it and submit again before the deadline.
+4. **Your last submission before the deadline is the one that counts** — at most 5 submissions per UTC day and 10 in total. The commit is snapshotted at submission, so later pushes do not change the entry, but keep the repository public with your referral code in its README: after the deadline the organisers read it again on GitHub, and an entry that is no longer public, no longer the same repository, or no longer carries its referral code is disqualified.
 
-After you submit, the leaderboard shows your entry's dev score or rank. For judged bounties the live board is provisional; the final result comes after the deadline.
+After you submit, the leaderboard shows your entry's dev score or rank. The live board is provisional; the final result comes only after the deadline, once every signup's review hold has closed and every entry's repository has been re-checked.
 
 ## Step 5 — Getting paid
 
-If your entry places in the prize zone, claim the prize within the claim window shown on the bounty page (usually 7 days). Prizes are paid in USDC on Solana to the wallet linked to your account. Unclaimed prizes pass to the next entry, so do not sit on a win.
+If your entry places in the prize zone, claim the prize within the claim window shown on the bounty page — 7 days when the reward is paid from make.fun's reward wallet. Prizes are paid in USDC on Solana only, to the Solana wallet linked to your account (when the reward is locked in escrow, you claim it from the escrow to the wallet that signed your winning entry). Unclaimed prizes pass to the next entry, so do not sit on a win. A legal name, country of residence, and tax form are only asked when your make.fun prizes in a calendar year reach the $2,000 tax reporting threshold.
 
 ## What you need
 
@@ -99,7 +126,7 @@ It helps, but the agent writes the code. What you need is the judgement to pick 
 Anything from a couple of hours for a small guide or tutorial bounty to several days for a full game or trading bot. The deadline on the bounty page is the hard limit.
 
 **Can I enter the same bounty twice?**
-You can resubmit an improved version; the last submission before the deadline is the one that counts, up to the bounty’s submission limit.
+You can resubmit an improved version — at most 5 submissions per UTC day and 10 in total. The last submission received before the deadline is the one that counts.
 
 **Is my referral link worth sharing?**
 If people sign up through your link and become active, you earn referral rewards from make.fun, and in referral bounties like this one those signups are the score. Share it where real people will actually read it — a link nobody clicks scores nothing.
@@ -113,6 +140,7 @@ Do this right now, in order:
 - [ ] Open the competitions page and pick one bounty with a deadline at least a day away
 - [ ] Read that bounty's rules all the way through
 - [ ] Download its kit and start a fresh agent session
+- [ ] Share your referral link where real people will actually read it — a link nobody clicks scores nothing, and only verified, active humans count
 
 If you finish the checklist, you are further along than most people who only read about it.
 
